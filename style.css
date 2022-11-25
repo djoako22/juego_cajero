@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url("https://img.freepik.com/free-vector/supermarket-with-food-shelves-illustration_1262-16618.jpg?w=2000");
+    background-size: cover;
+}
+
+.local {
+    background-color: #e4e4e49d;
+    min-height: 100vh;
+}
+
+.cliente,
+.cajero {
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+}
+
+.cajaBilletes {
+    display: flex;
+    gap: 5px;
+}
+
+.billete {
+    background-color: #78b94f;
+    color: #fff;
+    font-weight: 800;
+    padding: 15px 10px;
+    border: #3e602e solid 5px;
+    border-radius: 5px;
+}
+
+c {
+    background-color: #3e602e;
+    padding: 10px 5px;
+    border-radius: 50px;
+}
+
+.billete:hover {
+    filter: brightness(80%);
+}
+
+input,
+button {
+    width: 100%;
+    margin: 2px 0;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+input {
+    background-color: #111;
+    color: #0e0;
+    font-family: "consolas";
+}
+
+button {
+    cursor: pointer;
+}
+
+span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+persona {
+    font-size: 3em;
+}
+
+texto {
+    border: #111 solid 3px;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+temporizador,
+puntos {
+    color: #111;
+    font-size: 5vh;
+    font-weight: 800;
+}
+
+temporizador {
+    display: block;
+    text-align: center;
+}
+
+puntos {
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    padding-right: 10px;
+}
+
+/* BOTON */
+.btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    margin: 5px 0;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+    text-align: center;
+}
+
+.edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: rgb(75, 75, 75);
+}
+
+.front {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: rgb(135, 135, 135);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.btn:hover {
+    filter: brightness(110%);
+}
+
+.btn:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}

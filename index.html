@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego Cajero</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="cajero-automatico.png" />
+  </head>
+  <body>
+    <div class="local">
+      <puntos></puntos>
+      <temporizador></temporizador>
+      <div class="cliente">
+        <h3 class="respuesta"></h3>
+        <br />
+        <span>Precio:</span>
+        <input type="text" class="precio" placeholder="Precio" disabled />
+        <span>Dinero:</span>
+        <input type="text" class="dinero" placeholder="Dinero" disabled />
+      </div>
+      <div class="cajero">
+        <form class="caja">
+          <persona
+            ><img
+              src="cajero-automatico.png"
+              width="100"
+              height="100" /></persona
+          ><br />
+          <span>Cambio:</span>
+          <input
+            type="text"
+            class="cambio"
+            placeholder="Cambio"
+            required
+            autofocus
+            disabled
+          />
+          <button class="btn" role="none">
+            <span class="edge"></span>
+            <span class="front text">Dar</span>
+          </button>
+        </form>
+        <div class="cajaBilletes"></div>
+        © Joaquin Garcia
+        <br />
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <!-- <script>
+            document.addEventListener("deviceready", () => {
+                cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=no, toolbar=no');
+            });
+        </script> -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6624409457755111"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
